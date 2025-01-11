@@ -1,0 +1,818 @@
+@use "./variables.scss" as var;
+@use "./mixins.scss" as mix;
+
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+
+@media screen and (max-width: 1149px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main {
+    .container {
+      .main-info {
+        .main-title {
+          font-size: 43px;
+        }
+      }
+    }
+  }
+
+  .content {
+    .container {
+      margin-bottom: 180px;
+    }
+  }
+
+  .program {
+    .container {
+      .program-items {
+        .program-item {
+          .program-item-title {
+            box-shadow: none;
+          }
+
+          .program-item-description {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  .schedule {
+    .container {
+      margin-bottom: 180px;
+
+      .slider-container {
+        max-width: 760px;
+        margin-left: calc((100% - 720px) / 2);
+      }
+    }
+  }
+
+  .photo {
+    .container {
+      margin-bottom: 122px;
+      margin-right: -30px;
+
+      .photo-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .photo-slider {
+        display: none;
+      }
+
+      .adaptive-slider-container {
+        max-width: 960px;
+        margin: 0 auto;
+
+        .adaptive-photo-slider {
+          display: block;
+          width: 100%;
+
+          .slider-item {
+            .adaptive-slider-page {
+              max-width: 450px;
+              max-height: 270px;
+              overflow: hidden;
+              border-radius: 15px;
+              @include mix.slider-img;
+              margin-bottom: 30px;
+            }
+          }
+
+          @include mix.slider-nav(150px, var.$text-color-dark-1);
+        }
+      }
+    }
+  }
+  .feedback {
+    .container {
+      margin-bottom: 180px;
+    }
+  }
+
+  .form-booking {
+    .container {
+      margin-bottom: 50px;
+    }
+  }
+
+  .footer {
+    .container {
+      gap: 0;
+    }
+  }
+  .air-balloon-1,
+  .air-balloon-2,
+  .air-balloon-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  h2 {
+    font-size: 33px;
+  }
+
+  .header {
+    .container {
+      margin-bottom: 120px;
+    }
+  }
+  .main {
+    .container {
+      margin-bottom: 140px;
+
+      .main-info {
+        .main-title {
+          max-width: 467px;
+        }
+      }
+    }
+  }
+
+  .photo {
+    .container {
+      margin-bottom: 110px;
+      margin-right: 0;
+
+      .adaptive-slider-container {
+        max-width: 450px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .feedback {
+    .container {
+      margin-bottom: 110px;
+
+      .slider-container {
+        max-width: 445px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .header {
+    .container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-auto-flow: row dense;
+      justify-content: space-around;
+      row-gap: 20px;
+      margin-bottom: 120px;
+
+      .logo {
+        grid-row-start: 2;
+      }
+
+      .menu {
+        grid-column: span 2;
+      }
+
+      .phone {
+        grid-row-start: 2;
+      }
+    }
+  }
+  .main {
+    .container {
+      margin-bottom: 120px;
+      position: relative;
+
+      .main-info {
+        row-gap: 30px;
+
+        .main-title {
+          max-width: 575px;
+          font-size: 40px;
+        }
+
+        .main-description {
+          max-width: 575px;
+          margin-bottom: 285px;
+        }
+      }
+
+      .main-video {
+        position: absolute;
+        top: 175px;
+        left: 20px;
+      }
+
+      .wallpaper {
+        position: absolute;
+        top: 175px;
+        left: 20px;
+      }
+    }
+  }
+  .program {
+    .container {
+      margin-bottom: 80px;
+    }
+  }
+  .content {
+    .container {
+      .uncontent-items {
+        row-gap: 30px;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-left: 55px;
+      }
+    }
+  }
+
+  .schedule {
+    .container {
+      .slider-container {
+        max-width: 350px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .form-booking {
+    .container {
+      .booking-info {
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+
+        .form-title {
+          max-width: 373px;
+          text-align: center;
+        }
+
+        .form-description {
+          max-width: 373px;
+          text-align: center;
+        }
+
+        .form {
+          .input {
+            width: 290px;
+            font-size: 14px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+
+          .input-button {
+            width: 290px;
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+          }
+        }
+      }
+
+      .booking-image {
+        display: none;
+      }
+    }
+  }
+  .footer {
+    .container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      grid-auto-flow: row dense;
+      justify-content: center;
+      row-gap: 30px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      .social {
+        grid-row-start: 2;
+
+        .social-links {
+          flex-direction: row;
+
+          .net-item {
+            .net-name {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .phone {
+        grid-row-start: 2;
+        grid-column-start: 2;
+
+        .button-container {
+          height: 45px;
+          width: 145px;
+
+          .footer-order-call {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .mailing {
+        grid-row-start: 3;
+        grid-column: span 2;
+
+        .mailing-description {
+          width: 344px;
+        }
+
+        .mailing-form {
+          width: 290px;
+
+          .mailing-button {
+            left: 248px;
+          }
+
+          .email-input {
+            background-image: url("../images/mailing-mini.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .header {
+    .container {
+      margin-bottom: 80px;
+
+      .phone {
+        display: none;
+      }
+
+      @include mix.flex(space-between, center);
+      flex-direction: row-reverse;
+
+      .burger {
+        display: block;
+        cursor: pointer;
+
+        svg {
+          width: 36px;
+          height: 23px;
+          margin-right: 20px;
+        }
+      }
+
+      .menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: var.$bg-color-menu;
+        z-index: 10;
+
+        .close {
+          display: block;
+          width: 24px;
+          height: 24px;
+          fill: var.$border-color;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          cursor: pointer;
+        }
+
+        .menu-items {
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 20px;
+          margin: 0 auto;
+          padding: 30px;
+          background-color: var.$text-color-light-1;
+          border-radius: 20px;
+          outline: 2px solid var.$border-color;
+          z-index: 11;
+
+          a {
+            color: var.$text-color-dark-1;
+            font-family: var.$mont-sb;
+
+            &:hover {
+              border-bottom: 2px solid var.$text-color-dark-1;
+            }
+          }
+        }
+      }
+
+      .menu.open {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .main {
+    .container {
+      .main-info {
+        .main-title {
+          font-size: 25px;
+        }
+
+        .main-description {
+          font-size: 14px;
+          margin-bottom: 0;
+          max-width: 340px;
+        }
+
+        .main-bonus {
+          display: block;
+          @include mix.font(12px, var.$text-color-light-1, var.$mont-i);
+          line-height: 1.333;
+          margin-bottom: 167px;
+          position: relative;
+          max-width: 185px;
+
+          &:after {
+            content: url("../images/arrow.png");
+            position: absolute;
+            top: 23px;
+            left: 158px;
+            background-color: var.$text-color-transparent;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .main-button {
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+      }
+
+      .main-video {
+        width: 290px;
+        height: 150px;
+        left: 15px;
+      }
+
+      .wallpaper {
+        width: 290px;
+        height: 150px;
+        left: 15px;
+        border: 2px solid var.$border-color;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .play-button {
+          height: 38px;
+          width: 38px;
+          top: calc(50% - 19px);
+          left: calc(50% - 19px);
+        }
+      }
+    }
+  }
+  .advantages {
+    .container {
+      margin-bottom: 80px;
+
+      .advantage-items {
+        .advantage-item {
+          padding: 30px;
+          .advantage-item-title {
+            top: -29px;
+            font-size: 35px;
+          }
+
+          .advantage-item-description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .program {
+    .container {
+      .program-items {
+        row-gap: 20px;
+        margin-bottom: 50px;
+
+        .program-item {
+          row-gap: 15px;
+          padding-left: 15px;
+          height: min-content;
+
+          .program-item-title {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-right: 10px;
+          }
+
+          .program-item-description {
+            font-size: 12px;
+            margin-right: 10px;
+
+            .read-more-target {
+              opacity: 0;
+              max-height: 0;
+              font-size: 0;
+              transition: 0.25s ease;
+            }
+          }
+
+          .read-more-state:checked ~ .program-item-description .read-more-target {
+            opacity: 1;
+            font-size: 12px;
+            max-height: 999em;
+          }
+
+          .read-more-state:checked ~ .read-more-trigger:before {
+            content: "Скрыть";
+          }
+
+          .read-more-state:checked ~ .program-item-description .dots {
+            display: none;
+          }
+
+          .read-more-state ~ .read-more-trigger:before {
+            content: "Читать далее";
+            font-family: "Montserrat-Bold", sans-serif;
+            font-size: 12px;
+            color: var.$border-color;
+          }
+
+          .read-more-state ~ .program-item-description .dots {
+            display: inline;
+          }
+
+          .read-more-state ~ .read-more-trigger:after {
+            content: url("../images/more.png");
+            margin-left: 6px;
+            position: relative;
+            top: 2px;
+          }
+
+          .read-more-trigger {
+            display: inline-block;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            color: var.$text-color-dark-1;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    .container {
+      .content-title {
+        margin-bottom: 30px;
+      }
+
+      .content-items {
+        row-gap: 15px;
+        border: 2px solid var.$border-color;
+        border-radius: 10px;
+        padding: 28px;
+        justify-content: left;
+
+        .content-item {
+          display: block;
+          height: min-content;
+          border: 0;
+          position: static;
+          padding: 0;
+
+          &:before {
+            display: none;
+          }
+
+          .content-item-title {
+            position: static;
+            font-family: var.$mont-b;
+            font-size: 14px;
+            display: inline;
+            width: min-content;
+            box-shadow: none;
+
+            &:after {
+              content: '.';
+              @include mix.font(14px, var.$text-color-dark-1, var.$mont-b);
+            }
+          }
+
+          .content-item-description {
+            display: inline;
+            font-size: 14px;
+            hyphens: auto; //Переносы слов
+          }
+        }
+      }
+
+      .uncontent-title {
+        margin-bottom: 30px;
+      }
+
+      .uncontent-items {
+        @include mix.flex(left, center, 15px);
+        border: 2px solid var.$border-color;
+        border-radius: 10px;
+        padding: 28px;
+        margin-left: 0;
+
+        .uncontent-item {
+          display: block;
+          background-color: var.$text-color-light-1;
+          box-shadow: 0 0 8px 8px var.$text-color-light-1;
+          max-width: 285px;
+
+          .uncontent-item-title {
+            font-family: var.$mont-b;
+            font-size: 14px;
+            display: inline;
+
+            &:after {
+              content: '.';
+              @include mix.font(14px, var.$text-color-dark-1, var.$mont-b);
+            }
+          }
+
+          .uncontent-item-description {
+            display: inline;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .schedule {
+    .container {
+      .schedule-slider {
+        .slider-page {
+          .tour-info {
+            .item-title {
+              font-size: 15px;
+            }
+            .item-description {
+              font-size: 14px;
+            }
+          }
+          .booking-button {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .photo {
+    .container {
+      margin-bottom: 80px;
+
+      .adaptive-slider-container {
+        .adaptive-photo-slider {
+          .slider-item {
+            .adaptive-slider-page {
+              max-height: 175px;
+
+              .adaptive-photo {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .feedback {
+    .container {
+      margin-bottom: 120px;
+
+      .slider-container {
+        max-width: 445px;
+        margin: 0 auto;
+
+        .feedback-slider {
+          .slider-page {
+            padding: 30px;
+            height: min-content; // Или
+            //height: 410px;      // Или
+
+            .client-info {
+              margin-bottom: 15px;
+            }
+
+            .feedback-text {
+              font-size: 12px;
+
+              .read-more-target {
+                opacity: 0;
+                max-height: 0;
+                font-size: 0;
+                transition: 0.25s ease;
+              }
+            }
+
+            .read-more-state:checked ~ .feedback-text .read-more-target {
+              opacity: 1;
+              font-size: 12px;
+              max-height: 999em;
+            }
+
+            .read-more-state:checked ~ .read-more-trigger:before {
+              content: "Скрыть";
+            }
+
+            .read-more-state:checked ~ .feedback-text .dots {
+              display: none;
+            }
+
+            .read-more-state ~ .read-more-trigger:before {
+              content: "Читать далее";
+              font-family: "Montserrat-Bold", sans-serif;
+              font-size: 12px;
+              color: var.$border-color;
+            }
+
+            .read-more-state ~ .feedback-text .dots {
+              display: inline;
+            }
+
+            .read-more-state ~ .read-more-trigger:after {
+              content: url("../images/more.png");
+              margin-left: 6px;
+              position: relative;
+              top: 2px;
+            }
+
+            .read-more-trigger {
+              display: inline-block;
+              margin-top: 20px;
+              cursor: pointer;
+              font-size: 12px;
+              color: var.$text-color-dark-1;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-booking {
+    .container {
+      margin-bottom: 80px;
+
+      .booking-info {
+        .form-description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      .social {
+        .footer-title {
+          font-size: 14px;
+        }
+      }
+
+      .mailing {
+        row-gap: 15px;
+
+        .footer-title {
+          font-size: 14px;
+        }
+
+        .mailing-description {
+          width: inherit;
+          font-size: 12px;
+        }
+      }
+
+      .phone {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

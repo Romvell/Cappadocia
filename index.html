@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Каппадокия</title>
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/swipebox.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="burger" id="burger">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40px" height="23px">
+                <linearGradient id="linear-gradient">
+                    <stop offset="0%" stop-color="#ffd61e"/>
+                    <stop offset="100%" stop-color="#fa742b"/>
+                </linearGradient>
+                <path fill-rule="evenodd" fill="url(#linear-gradient)"
+                      d="M0.000,-0.000 L40.000,-0.000 L40.000,3.000 L0.000,3.000 L0.000,-0.000 Z"/>
+                <path fill-rule="evenodd" fill="url(#linear-gradient)"
+                      d="M0.000,10.000 L40.000,10.000 L40.000,13.000 L0.000,13.000 L0.000,10.000 Z"/>
+                <path fill-rule="evenodd" fill="url(#linear-gradient)"
+                      d="M0.000,20.000 L40.000,20.000 L40.000,23.000 L0.000,23.000 L0.000,20.000 Z"/>
+            </svg>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+            <span>CAPPADOCIA</span>
+        </div>
+        <nav class="menu" id="menu">
+            <div class="close">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <a href="#program">Программа</a>
+                <a href="#schedule">Расписание</a>
+                <a href="#photo">Фото</a>
+                <a href="#feedback">Отзывы</a>
+            </div>
+        </nav>
+        <div class="phone">
+            <span>+375 (29) 586-87-87</span>
+            <button type="button" id="header-order-call" class="header-order-call">
+                <img src="images/telephone.png" alt="Заказать звонок">
+                <p>Заказать звонок</p>
+            </button>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="main-info">
+            <h1 class="main-title">
+                Незабываемая поездка в Каппадокию
+            </h1>
+            <p class="main-description">
+                Подари себе яркие впечатления, путешествуя вместе с нами
+            </p>
+            <p class="main-bonus">
+                Посмотрите на путешествие, которое Вас ждёт.
+            </p>
+            <button type="button" class="main-button"> Смотреть программу</button>
+        </div>
+        <div class="main-video">
+            <iframe
+                    src="https://vk.com/video_ext.php?oid=13687759&id=456239127&hash=2d2b204d6354cb78"
+                    width="444"
+                    height="241" frameborder="0" allowfullscreen="1"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+            ></iframe>
+        </div>
+        <div class="wallpaper">
+            <img src="images/video.png" alt="Обложка видеоролика">
+            <button type="button" class="play-button">
+                <img src="images/play-button.png" alt="Кнопка воспроизведения видео">
+            </button>
+        </div>
+    </div>
+</main>
+<section class="advantages">
+    <div class="container">
+        <h2 class="advantage-title">Почему нам доверяют</h2>
+        <div class="advantage-items">
+            <div class="advantage-item">
+                <div class="advantage-item-title">1</div>
+                <div class="advantage-item-description">
+                    Мы обеспечиваем
+                    <span>комфортные условия</span>
+                    трансфера для наших клиентов
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-title">2</div>
+                <div class="advantage-item-description">
+                    Наша компания уже организовала более
+                    <span>10.000</span>
+                    поездок в Каппадокию
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-title">3</div>
+                <div class="advantage-item-description">
+                    Более
+                    <span>200.000</span>
+                    клиентов оставили положительные отзывы
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="program" id="program">
+    <div class="container">
+        <h2 class="program-title">Программа тура</h2>
+        <div class="program-items">
+            <div class="program-item">
+                <h3 class="program-item-title">1. Шоу «Турецкая ночь»</h3>
+                <input type="checkbox" class="read-more-state" id="program-1"/>
+                <p class="program-item-description">
+                    Кружащиеся Дервиши, танцевальная постановка в стиле настоящей<span
+                        class="dots">... </span><span class="read-more-target"> турецкой свадьбы, кавказские танцы с огнем и ножами, барабанное шоу и зажигательный танец живота на десерт</span>
+                </p>
+                <label for="program-1" class="read-more-trigger"></label>
+                <div class="program-image">
+                    <img src="images/program/program_1.png" alt="фото">
+                </div>
+            </div>
+            <div class="program-item">
+                <h3 class="program-item-title">2. Турецкая баня (Хамам)</h3>
+                <input type="checkbox" class="read-more-state" id="program-2"/>
+                <p class="program-item-description">
+                    Одним из поистине незабываемых впечатлений от поездки<span
+                        class="dots">... </span><span class="read-more-target"> в Турцию является посещение Хамама.
+                    Турецкая баня помогает человеку расслабиться и достичь умиротворения</span>
+                </p>
+                <label for="program-2" class="read-more-trigger"></label>
+                <div class="program-image">
+                    <img src="images/program/program_2.png" alt="фото">
+                </div>
+            </div>
+            <div class="program-item">
+                <h3 class="program-item-title">3. Каньон Ихлара</h3>
+                <input type="checkbox" class="read-more-state" id="program-3"/>
+                <p class="program-item-description">
+                    Остановка на смотровой площадке, откуда открывается<span
+                        class="dots">... </span><span class="read-more-target"> захватывающий вид на музей Гёреме, самого
+                    известного монастырского комплекса Каппадокии, включенного в список всемирного наследия ЮНЕСКО</span>
+                </p>
+                <label for="program-3" class="read-more-trigger"></label>
+                <div class="program-image">
+                    <img src="images/program/program_3.png" alt="фото">
+                </div>
+            </div>
+            <div class="program-item">
+                <h3 class="program-item-title">4. Полет на воздушном шаре</h3>
+                <input type="checkbox" class="read-more-state" id="program-4"/>
+                <p class="program-item-description">
+                    Путешествие на воздушном шаре — лучший способ с высоты птичьего<span
+                        class="dots">... </span><span class="read-more-target"> полета насладиться великолепными
+                    видами Каппадокии, озаренной первыми лучами солнца</span>
+                </p>
+                <label for="program-4" class="read-more-trigger"></label>
+                <div class="program-image">
+                    <img src="images/program/program_4.png" alt="фото">
+                </div>
+            </div>
+            <div class="program-item">
+                <h3 class="program-item-title">5. Долины Каппадокии</h3>
+                <input type="checkbox" class="read-more-state" id="program-5"/>
+                <p class="program-item-description">
+                    Как и в других долинах Каппадокии вы здесь увидите множество<span
+                        class="dots">... </span><span class="read-more-target"> пещер, уникальных христианских
+                    церквей, сохранившиеся до наших дней, ухоженные виноградники и плодовые деревья</span>
+                </p>
+                <label for="program-5" class="read-more-trigger"></label>
+                <div class="program-image">
+                    <img src="images/program/program_5.png" alt="фото">
+                </div>
+            </div>
+            <div class="program-item">
+                <h3 class="program-item-title">6. Конная прогулка</h3>
+                <input type="checkbox" class="read-more-state" id="program-6"/>
+                <p class="program-item-description">
+                    Отличная возможность покататься верхом по долинам вдали от<span
+                        class="dots">... </span><span class="read-more-target"> цивилизации, насладиться сказочными
+                    пейзажами и познакомиться с традиционной жизнью и культурой Каппадокии</span>
+                </p>
+                <label for="program-6" class="read-more-trigger"></label>
+                <div class="program-image">
+                    <img src="images/program/program_6.png" alt="фото">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container">
+        <h2 class="content-title">Что входит в стоимость тура</h2>
+        <div class="content-items">
+            <div class="content-item">
+                <div class="content-item-title">1</div>
+                <div class="content-item-description">
+                    Проживание 5 ночей в Стамбуле + 2 ночи в Каппадокии
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-title">2</div>
+                <div class="content-item-description">
+                    Завтраки и ужины + напитки местного производства
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-title">3</div>
+                <div class="content-item-description">
+                    Сопровождение профессиональным гидом
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-title">4</div>
+                <div class="content-item-description">
+                    Шесть экскурсий по программе
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-title">5</div>
+                <div class="content-item-description">
+                    Фотосессии от профессионального фотографа
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-title">6</div>
+                <div class="content-item-description">
+                    Медицинская страховка + тест на коронавирус
+                </div>
+            </div>
+        </div>
+        <h3 class="uncontent-title">В стоимость тура не входит</h3>
+        <div class="uncontent-items">
+            <div class="uncontent-item">
+                <div class="uncontent-item-title">1</div>
+                <div class="uncontent-item-description">
+                    Обед + личные расходы
+                </div>
+            </div>
+            <div class="uncontent-item">
+                <div class="uncontent-item-title">2</div>
+                <div class="uncontent-item-description">
+                    Чаевые водителю или гиду (по желанию)
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="schedule" id="schedule">
+    <div class="bg-container"></div>
+    <div class="container">
+        <h2 class="schedule-title">Расписание туров</h2>
+        <div class="slider-container">
+            <div class="schedule-slider">
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">29.07.2025 - 04.08.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 5 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">850 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">04.08.2025 - 10.08.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 9 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">750 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">18.08.2025 - 24.08.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 15 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">650 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">04.09.2025 - 10.09.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 18 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">670 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">17.09.2025 - 23.09.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 22 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">640 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">01.10.2025 - 07.10.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 25 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">650 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="tour-info">
+                            <div class="tour-info-item">
+                                <p class="item-title">Даты тура</p>
+                                <p class="item-description">18.10.2025 - 24.108.2025</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Свободно мест</p>
+                                <p class="item-description">Осталось 30 мест</p>
+                            </div>
+                            <div class="tour-info-item">
+                                <p class="item-title">Стоимость</p>
+                                <p class="item-description">620 EUR <span>за 1 пассажира</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="booking-button">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="photo" id="photo">
+    <div class="container">
+        <h2 class="photo-title">Фотографии с наших экскурсий</h2>
+        <div class="slider-container">
+            <div class="photo-slider">
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <a href="images/photo/s11.png" class="photo-1 swipebox">
+                            <img src="images/photo/small/s11-min.png" alt="Слайд 1 фото 1">
+                        </a>
+                        <a href="images/photo/s12.jpg" class="photo-2 swipebox">
+                            <img src="images/photo/small/s12-min.jpg" alt="Слайд 1 фото 2">
+                        </a>
+                        <a href="images/photo/s13.jpg" class="photo-3 swipebox">
+                            <img src="images/photo/small/s13-min.jpg" alt="Слайд 1 фото 3">
+                        </a>
+                        <a href="images/photo/s14.jpg" class="photo-4 swipebox">
+                            <img src="images/photo/small/s14-min.jpg" alt="Слайд 1 фото 4">
+                        </a>
+                        <a href="images/photo/s15.jpg" class="photo-5 swipebox">
+                            <img src="images/photo/small/s15-min.jpg" alt="Слайд 1 фото 5">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <a href="images/photo/s21.jpg" class="photo-1 swipebox">
+                            <img src="images/photo/small/s21-min.jpg" alt="Слайд 2 фото 1">
+                        </a>
+                        <a href="images/photo/s22.jpg" class="photo-2 swipebox">
+                            <img src="images/photo/small/s22-min.jpg" alt="Слайд 2 фото 2">
+                        </a>
+                        <a href="images/photo/s23.jpeg" class="photo-3 swipebox">
+                            <img src="images/photo/small/s23-min.jpeg" alt="Слайд 2 фото 3">
+                        </a>
+                        <a href="images/photo/s24.jpg" class="photo-4 swipebox">
+                            <img src="images/photo/small/s24-min.jpg" alt="Слайд 2 фото 4">
+                        </a>
+                        <a href="images/photo/s25.jpg" class="photo-5 swipebox">
+                            <img src="images/photo/small/s25-min.jpg" alt="Слайд 2 фото 5">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <a href="images/photo/s31.jpg" class="photo-1 swipebox">
+                            <img src="images/photo/small/s31-min.jpg" alt="Слайд 3 фото 1">
+                        </a>
+                        <a href="images/photo/s32.webp" class="photo-2 swipebox">
+                            <img src="images/photo/small/s23-min.jpeg" alt="Слайд 2 фото 2">
+                        </a>
+                        <a href="images/photo/s33.jpg" class="photo-3 swipebox">
+                            <img src="images/photo/small/s33-min.jpg" alt="Слайд 3 фото 3">
+                        </a>
+                        <a href="images/photo/s34.jpg" class="photo-4 swipebox">
+                            <img src="images/photo/small/s34-min.jpg" alt="Слайд 3 фото 4">
+                        </a>
+                        <a href="images/photo/s35.jpg" class="photo-5 swipebox">
+                            <img src="images/photo/small/s35-min.jpg" alt="Слайд 3 фото 5">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <a href="images/photo/s41.jpg" class="photo-1 swipebox">
+                            <img src="images/photo/small/s41-min.jpg" alt="Слайд 4 фото 1">
+                        </a>
+                        <a href="images/photo/s42.webp" class="photo-2 swipebox">
+                            <img src="images/photo/small/s24-min.jpg" alt="Слайд 4 фото 2">
+                        </a>
+                        <a href="images/photo/s43.jpg" class="photo-3 swipebox">
+                            <img src="images/photo/small/s43-min.jpg" alt="Слайд 4 фото 3">
+                        </a>
+                        <a href="images/photo/s44.jpg" class="photo-4 swipebox">
+                            <img src="images/photo/small/s44-min.jpg" alt="Слайд 4 фото 4">
+                        </a>
+                        <a href="images/photo/s45.jpg" class="photo-5 swipebox">
+                            <img src="images/photo/small/s45-min.jpg" alt="Слайд 4 фото 5">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="adaptive-slider-container">
+            <div class="adaptive-photo-slider">
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s11.png" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s11-min.png" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s12.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s12-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s14.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s14-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s15.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s15-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s35.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s35-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s22.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s22-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s24.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s24-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="adaptive-slider-page">
+                        <a href="images/photo/s25.jpg" class="adaptive-photo swipebox">
+                            <img src="images/photo/small/s25-min.jpg" alt="Фото из Каппадокии">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feedback" id="feedback">
+    <div class="container">
+        <h2 class="feedback-title">Отзывы наших клиентов</h2>
+        <div class="slider-container">
+            <div class="feedback-slider">
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="client-info">
+                            <div class="client-photo">
+                                <img src="images/feedback/fb1.png" alt="Фото клиента">
+                            </div>
+                            <div class="client-description">
+                                <p class="client-name">Валерия, 25 лет</p>
+                                <p class="client-city">Минск, Беларусь</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" class="read-more-state onclick" id="feedback-1"/>
+                        <div class="feedback-text">
+                            Очень красивый и уютный городок. Просто гулять по городу уже масса впечатлений — дома в
+                            горах,
+                            пещеры, множество заведений, украшены по-своему и все в общем<span
+                        class="dots">... </span><span class="read-more-target"> стиле. Тур оператора выбрала
+                            по
+                            совету
+                            знакомых и осталась очень довольна. Очень насыщенная и интересная программа. Обязательно
+                            буду
+                            советовать вашу компанию своим знакомым. Спасибо за незабываемые впечатления!</span>
+                        </div>
+                        <label for="feedback-1" class="read-more-trigger"></label>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="client-info">
+                            <div class="client-photo">
+                                <img src="images/feedback/fb2.png" alt="Фото клиента">
+                            </div>
+                            <div class="client-description">
+                                <p class="client-name">Олег, 34 года</p>
+                                <p class="client-city">Москва, Россия</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" class="read-more-state onclick" id="feedback-2"/>
+                        <div class="feedback-text">
+                            Спасибо за четко организованный тур и насыщенную программу! Ни разу не пожалел, что выбрал
+                            вашу
+                            компанию. Полеты на воздушном шаре действительно<span
+                        class="dots">... </span><span class="read-more-target"> оказались незабываемыми. Так же спасибо за
+                            услугу
+                            профессионального фотографа, теперь эти моменты счастья останутся со мной на всю жизнь!</span>
+                        </div>
+                        <label for="feedback-2" class="read-more-trigger"></label>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="client-info">
+                            <div class="client-photo">
+                                <img src="images/feedback/fb3.jpg" alt="Фото клиента">
+                            </div>
+                            <div class="client-description">
+                                <p class="client-name">Михаил, 41 год</p>
+                                <p class="client-city">Саратов, Россия</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" class="read-more-state onclick" id="feedback-3"/>
+                        <div class="feedback-text">
+                            Незабываемое путешествие в Каппадокию!
+                            Два насыщенных дня: встреча рассвета на воздушном шаре, Красная и Зеленая экскурсии,
+                            дервиши.
+                            Понравилось всё! Отель в<span
+                        class="dots">... </span><span class="read-more-target"> пещере вне всяких похвал: милый дворик, увитый виноградом, терраса,
+                            уютный номер, кровать удобная, душ просторный, уборка каждый день, завтрак вкусный с видом
+                            на всю
+                            Каппадоккию. Огромное спасибо!</span>
+                        </div>
+                        <label for="feedback-3" class="read-more-trigger"></label>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="client-info">
+                            <div class="client-photo">
+                                <img src="images/feedback/fb4.jpg" alt="Фото клиента">
+                            </div>
+                            <div class="client-description">
+                                <p class="client-name">Сергей, 29 лет</p>
+                                <p class="client-city">Казань, Россия</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" class="read-more-state onclick" id="feedback-4"/>
+                        <div class="feedback-text">
+                            Приезжали с семьей (4 человека) в Каппадокию в феврале на длинные выходные. Планировали все
+                            экскурсии: 1 день — Красный тур, 2 день — встречали рассвет<span
+                        class="dots">... </span><span class="read-more-target"> прогулкой
+                            на воздушном шаре, провожали солнце в розовой долине, 3
+                            день — Зелёный тур. Жили в отеле в deluxe апартаментах в пещере. Сам город Гореме — самое
+                            правильное место для
+                            остановки в Каппадокии.</span>
+                        </div>
+                        <label for="feedback-4" class="read-more-trigger"></label>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="client-info">
+                            <div class="client-photo">
+                                <img src="images/feedback/fb5.jpg" alt="Фото клиента">
+                            </div>
+                            <div class="client-description">
+                                <p class="client-name">Ольга, 26 лет</p>
+                                <p class="client-city">Харьков, Россия</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" class="read-more-state onclick" id="feedback-5"/>
+                        <div class="feedback-text">
+                            В Каппадокию собрались с подругой за 2 дня… Билеты из Харькова в Стамбул и в Кайсери
+                            купили!!!
+                            Трансфер из аэропорта в 2 ночи, утром сразу «Красный тур», на<span
+                        class="dots">... </span><span class="read-more-target"> следующий день утренний полет
+                            на
+                            шаре
+                            и сразу на «Зеленый тур»! В 3 ночи обратный трансфер в аэропорт в подарок! Каппадокия — это
+                            сказка! Рекомендуем! Все вовремя и четко! Спасибо
+                            огромное!</span>
+                        </div>
+                        <label for="feedback-5" class="read-more-trigger"></label>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-page">
+                        <div class="client-info">
+                            <div class="client-photo">
+                                <img src="images/feedback/fb6.jpg" alt="Фото клиента">
+                            </div>
+                            <div class="client-description">
+                                <p class="client-name">Игорь, 32 года</p>
+                                <p class="client-city">Ханты-Мансийск, Россия</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" class="read-more-state onclick" id="feedback-6"/>
+                        <div class="feedback-text">
+                            Приехали в Каппадокию за новыми впечатлениями и новыми красотами и не прогадали.
+                            Забронировали
+                            туры
+                            по Северной и Южной Каппадокии. На следующий<span
+                        class="dots">... </span><span class="read-more-target"> день мы осматривали Учхисар, а вечером была
+                            прогулка на
+                            квадроциклах. Всем рекомендуем встретить закат в Розовой Долине. Спасибо большое за
+                            такую
+                            душевную организацию.</span>
+                        </div>
+                        <label for="feedback-6" class="read-more-trigger"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form-booking">
+    <div class="container">
+        <div class="booking-info">
+            <h2 class="form-title">
+                Отправляйтесь в свое путешествие вместе с нами!
+            </h2>
+            <p class="form-description">
+                Заполните форму заявки и ожидайте звонка нашего менеджера в течении 10 минут
+            </p>
+            <form action="#" id="order-form" class="form">
+                <input type="text" id="name" name="name" class="input name" placeholder="Ваше имя" required>
+                <input type="text" id="phone" name="phone" class="input phone" placeholder="Ваш телефон" required>
+                <input type="button" id="order-button" class="input-button" value="Отправить заявку"
+                       placeholder="Отправить заявку">
+            </form>
+            <div class="order-accepted">
+                Спасибо, мы свяжемся с вами в ближайшее время!
+            </div>
+        </div>
+        <figure class="booking-image">
+            <img src="images/air-balloon-4.png" alt="Изображение воздушного шара">
+        </figure>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+            <span>CAPPADOCIA</span>
+        </div>
+        <div class="social">
+            <h4 class="footer-title">Мы в соц. сетях</h4>
+            <div class="social-links">
+                <a href="https://vk.com/turkey_cappadocia" class="net-item">
+                    <div class="net-logo">
+                        <img src="images/vk.png" alt='логотип "ВКонтакте"'>
+                    </div>
+                    <div class="net-name">Vkontakte</div>
+                </a>
+                <a href="https://www.instagram.com/cappadocia/" class="net-item">
+                    <div class="net-logo">
+                        <img src="images/ig.png" alt='логотип "Инстаграмм"'>
+                    </div>
+                    <div class="net-name">Instagram</div>
+                </a>
+                <a href="https://ru-ru.facebook.com/gocappadocia/" class="net-item">
+                    <div class="net-logo">
+                        <img src="images/fb.png" alt='логотип "Фейсбук"'>
+                    </div>
+                    <div class="net-name">Facebook</div>
+                </a>
+            </div>
+        </div>
+        <div class="mailing">
+            <h4 class="footer-title">Подписка на рассылку</h4>
+            <p class="mailing-description">
+                Подпишитесь на рассылку новостей и будьте в курсе всех наших выгодных предложений!
+            </p>
+            <form id="mailing-form" class="mailing-form">
+                <input type="text" name="email" class="email-input" placeholder="Введите ваш e-mail">
+                <button type="button" id="mailing-button" class="mailing-button">
+                    <img src="images/down-arrow.png" alt="Стрелка">
+                </button>
+            </form>
+        </div>
+        <div class="phone">
+            <span>+375 (29) 586-87-87</span>
+            <div class="button-container">
+                <button type="button" id="footer-order-call" class="footer-order-call"></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bg"></div>
+</footer>
+<div class="air-balloon-1">
+    <img src="images/air-balloon-1.png" alt="Воздушный шар">
+</div>
+<div class="air-balloon-2">
+    <img src="images/air-balloon-2.png" alt="Воздушный шар">
+</div>
+<div class="air-balloon-3">
+    <img src="images/air-balloon-3.png" alt="Воздушный шар">
+</div>
+
+<div id="popup-bg" class="popup-bg">
+    <form action="#" id="popup-form" class="popup-form">
+        <div class="popup-container">
+            <input type="text" id="popup-name" name="name" class="input name" placeholder="Ваше имя" required>
+            <input type="text" id="popup-phone" name="phone" class="input phone" placeholder="Ваш телефон" required>
+            <input type="button" id="popup-button" class="input-button" value="Отправить заявку"
+                   placeholder="Отправить заявку">
+        </div>
+        <div class="popup-order-accepted">
+            Спасибо, мы свяжемся с вами в ближайшее время!
+        </div>
+    </form>
+
+
+</div>
+
+<div class="loader">
+    <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jquery.swipebox.js"></script>
+<script type="text/javascript" src="scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="scripts/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="scripts/slick.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

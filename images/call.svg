@@ -1,0 +1,8 @@
+<svg width="165" height="50" xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="linear-gradient">
+        <stop offset="0%" stop-color="#ffd61e"/>
+        <stop offset="100%" stop-color="#fa742b"/>
+    </linearGradient>
+    <rect x="1" y="1" rx="25" ry="25" width="164" height="49"
+        style="fill:transparent;stroke:url(#linear-gradient);stroke-width:1"/>
+</svg>

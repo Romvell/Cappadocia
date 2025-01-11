@@ -1,0 +1,98 @@
+@use "./variables.scss" as var;
+
+$mont-r: 'Montserrat-Regular', sans-serif;
+
+@mixin flex($along: space-between, $across: center, $gap: 0) {
+  display: flex;
+  justify-content: $along;
+  align-items: $across;
+  gap: $gap
+}
+
+@mixin font($size, $color, $font: $mont-r) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin button() {
+  text-align: center;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  background-image: var.$gradient;
+  @include font(16px, var.$text-color-dark-1, var.$mont-sb);
+}
+
+@mixin slider-nav($nav, $dot-color) {
+  .dots-style {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    button {
+      background: var.$text-color-transparent;
+      border: 1px solid $dot-color;
+      border-radius: 50%;
+      font-size: 0;
+      height: 15px;
+      width: 15px;
+      margin: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    li[class="slick-active"] button {
+      background: var.$gradient;
+      border: 0;
+    }
+  }
+
+  .button-prev {
+    position: absolute;
+    left: calc(50% - $nav);
+    top: calc(100% - 32px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .button-next {
+    position: absolute;
+    right: calc(50% - $nav);
+    top: calc(100% - 32px);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+
+@mixin slider-img() {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@mixin shadow-dark() {
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 10px 3px rgba(42, 41, 39, 0.5);
+  }
+}
+
+@mixin shadow-light() {
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 10px 3px rgba(255, 243, 225, 0.5);
+  }
+}
